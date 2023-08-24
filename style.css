@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -27,6 +27,13 @@ body {
     justify-content: space-between;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header p {
     font-weight: 300;
     font-size: 1.25rem;
@@ -36,7 +43,7 @@ header span {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2.5rem;
     font-weight: 800;
-    color: goldenrod;
+    color: gold;
 }
 
 .time-container {
@@ -49,22 +56,61 @@ header span {
 .box {
     width: 20%;
     text-align: center;
-    background-color: goldenrod;
+    background-color: gold;
     border-radius: 0.3rem;
     margin: 0.3rem;
 }
 
-.num{
+.num {
     font-weight: 800;
     font-size: 2rem;
 }
 
-.box span{
+.box span {
     font-size: 0.91rem;
     text-transform: lowercase;
     color: rgb(0, 0, 0);
 }
 
-.box:last-child .num{
+.box:last-child .num {
     color: tomato;
+}
+
+@media (max-width:300px) {
+
+    .time-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .box {
+        width: 40%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .container {
+        height: 200px;
+    }
+
+    .time-container {
+        width: 80%;
+        align-self: center;
+    }
+
+    .box {
+        width: 15%;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 800px;
+    }
 }
