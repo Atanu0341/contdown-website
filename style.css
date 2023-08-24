@@ -8,4 +8,12 @@
 
 body{
     font-family: 'Nunito', sans-serif;
+    background-image: url("https://drive.google.com/uc?id=1ewUqmg4Qxbt1iWc1A67Y7bNXtgN-tAVo");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
