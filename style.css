@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Nunito', sans-serif;
     background-image: url("https://drive.google.com/uc?id=1ewUqmg4Qxbt1iWc1A67Y7bNXtgN-tAVo");
     background-size: cover;
@@ -18,7 +18,7 @@ body{
     color: white;
 }
 
-.container{
+.container {
     margin-top: 3rem;
     width: 100%;
     height: 170px;
@@ -27,14 +27,44 @@ body{
     justify-content: space-between;
 }
 
-header p{
+header p {
     font-weight: 300;
     font-size: 1.25rem;
 }
 
-header span{
+header span {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2.5rem;
     font-weight: 800;
     color: goldenrod;
+}
+
+.time-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 20%;
+    text-align: center;
+    background-color: goldenrod;
+    border-radius: 0.3rem;
+    margin: 0.3rem;
+}
+
+.num{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.box span{
+    font-size: 0.91rem;
+    text-transform: lowercase;
+    color: rgb(0, 0, 0);
+}
+
+.box:last-child .num{
+    color: tomato;
 }
