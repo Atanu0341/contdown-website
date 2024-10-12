@@ -1,4 +1,4 @@
-let countDownTime = new Date("Oct 09, 2024 00:00:00").getTime();
+let countDownTime = new Date("Sept 28, 2025 00:00:00").getTime();
 
 const durgaPuja = () => {
   let nowTime = new Date().getTime();
